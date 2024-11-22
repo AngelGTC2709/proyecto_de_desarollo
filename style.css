@@ -79,10 +79,36 @@ body{
 /* Media query para pantallas menores de 600px (por ejemplo, teléfonos móviles) */ 
 @media (max-width: 600px) { 
     body { font-size: 14px; /* Ajustar el tamaño de la fuente */ 
+        margin: 0px;
     } 
     .content {
          width: 100% ; /* Hacer que el contenedor ocupe el 100% del ancho */ 
          padding: 10px ; /* Reducir el padding */
-         margin: 0px;
+    }
+}
+/* Estilos para tabletas (ancho máximo de 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Ajustar el tamaño de la fuente */
+        margin: 0px;
+    }
+
+    .contenedor {
+        width: 90%; /* Ajustar el ancho del contenedor */
+        padding: 15px; /* Ajustar el padding */
+    }
+}
+
+/* Estilos para pantallas más grandes (ancho mínimo de 769px) */
+@media (min-width: 769px) {
+    body {
+        font-size: 18px; /* Ajustar el tamaño de la fuente */
+        margin: 0px;
+
+    }
+
+    .contenedor {
+        width: 80%; /* Ajustar el ancho del contenedor */
+        padding: 20px; /* Ajustar el padding */
     }
 }
