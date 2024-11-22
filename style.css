@@ -15,8 +15,7 @@
     margin-top: 5%;
     position: absolute; 
 }
-
-article{
+.block{
     position: absolute;
     top: 40%;
     font-size: medium;
@@ -28,6 +27,24 @@ article{
     transform: translate(-50%,-50%);
     margin-top: 30%;
     border-radius: 40px;
+}
+.block1{
+    position: absolute;
+    top: 60%;
+    font-size: medium;
+    width: auto;  /* Ancho del cuadrado */
+    height: auto; /* Altura del cuadrado, igual al ancho para que sea un cuadrado */
+    background-color: rgba(0, 0, 0, 0.383); /* Color de fondo del cuadrado */
+    border: 2px  #000; /* Borde del cuadrado */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 30%;
+    border-radius: 40px;
+}
+#diriccionaminto{
+    border-color: transparent;
+    background-color: transparent;
+    font-size: larger;
 }
 .introduccion{
     text-align: center;
