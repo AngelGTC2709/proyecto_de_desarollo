@@ -82,6 +82,7 @@ body{
     } 
     .content {
          width: 100% ; /* Hacer que el contenedor ocupe el 100% del ancho */ 
-         padding: 10px; /* Reducir el padding */
+         padding: 10px ; /* Reducir el padding */
+         margin: 0px;
     }
 }
