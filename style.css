@@ -1,0 +1,75 @@
+#titulo{
+    color: #02488F; /* Color del texto */ 
+    font-size: 54px; /* Tamaño del texto */ 
+    font-weight: bold; /* Grosor del texto */ 
+    text-align: center;
+}
+.cuadrado{
+    top: 10%; /* Ajusta la posición vertical del texto */ 
+    left: 50%; /* Ajusta la posición horizontal del texto */ 
+    transform: translate(-50%, -50%); /* Centra el texto */ 
+    background-color: rgba(0, 0, 0, 0.446); /* Fondo semi-transparente para mejorar la legibilidad */ 
+    padding: 10px; /* Espaciado interno */ 
+    border-radius: 35px;
+    margin-top: 5%;
+    position: absolute; 
+}
+
+article{
+    position: absolute;
+    top: 40%;
+    font-size: medium;
+    width: auto;  /* Ancho del cuadrado */
+    height: auto; /* Altura del cuadrado, igual al ancho para que sea un cuadrado */
+    background-color: rgba(0, 0, 0, 0.383); /* Color de fondo del cuadrado */
+    border: 2px  #000; /* Borde del cuadrado */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 30%;
+    border-radius: 40px;
+}
+.introduccion{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #C6FADB;
+}
+.texto{
+    text-align: center;
+    margin: 10px;
+    font-size: 24px;
+    color: #C6FADB ;
+    font-weight: 400;
+}
+
+body{
+    margin: 0px;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "GRAD" 0,
+        "XOPQ" 96,
+        "XTRA" 468,
+        "YOPQ" 79,
+        "YTAS" 750,
+        "YTDE" -203,
+        "YTFI" 738,
+        "YTLC" 514,
+        "YTUC" 712
+        ;
+}
+.content{
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.content img{
+    width: 100%; 
+    height: auto;
+
+}
