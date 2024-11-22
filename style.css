@@ -3,6 +3,7 @@
     font-size: 54px; /* Tamaño del texto */ 
     font-weight: bold; /* Grosor del texto */ 
     text-align: center;
+    max-width: fit-content;
 }
 .cuadrado{
     top: 10%; /* Ajusta la posición vertical del texto */ 
@@ -40,6 +41,7 @@ article{
     font-size: 24px;
     color: #C6FADB ;
     font-weight: 400;
+    
 }
 
 body{
@@ -72,4 +74,14 @@ body{
     width: 100%; 
     height: auto;
 
+}
+
+/* Media query para pantallas menores de 600px (por ejemplo, teléfonos móviles) */ 
+@media (max-width: 600px) { 
+    body { font-size: 14px; /* Ajustar el tamaño de la fuente */ 
+    } 
+    .content {
+         width: 100%; /* Hacer que el contenedor ocupe el 100% del ancho */ 
+         padding: 10px; /* Reducir el padding */
+    }
 }
