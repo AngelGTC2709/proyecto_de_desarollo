@@ -13,7 +13,7 @@
     background-color: rgba(0, 0, 0, 0.446); /* Fondo semi-transparente para mejorar la legibilidad */ 
     padding: 10px; /* Espaciado interno */ 
     border-radius: 35px;
-    margin-top: 5%;
+    margin-top: 10%;
     position: absolute; 
     display: flex;
 }
@@ -27,7 +27,7 @@
     border: 2px  #000; /* Borde del cuadrado */
     left: 50%;
     transform: translate(-50%,-50%);
-    margin-top: 30%;
+    margin-top: 25%;
     border-radius: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -97,10 +97,10 @@ body{
 .content img{
     width: 100%; 
     height: auto;
-    min-width: max-content;
-    min-height: max-content;
-    max-width: max-content;
-    max-height: max-content ;
+    min-width: 300px;
+    min-height: 2000px;
+    max-width: 1700px;
+    max-height: 3000px ;
     margin: 0px;
 }
 
