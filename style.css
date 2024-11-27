@@ -1,76 +1,8 @@
-#titulo{
-    color: #02488F; /* Color del texto */ 
-    font-size: 54px; /* Tamaño del texto */ 
-    font-weight: bold; /* Grosor del texto */ 
-    text-align: center;
-    max-width: fit-content;
-    align-content: center;
-}
-.cuadrado{
-    top: 10%; /* Ajusta la posición vertical del texto */ 
-    left: 50%; /* Ajusta la posición horizontal del texto */ 
-    transform: translate(-50%, -50%); /* Centra el texto */ 
-    background-color: rgba(0, 0, 0, 0.446); /* Fondo semi-transparente para mejorar la legibilidad */ 
-    padding: 10px; /* Espaciado interno */ 
-    border-radius: 35px;
-    margin-top: 10%;
-    position: absolute; 
-    display: flex;
-}
-.block{
-    position: absolute;
-    top: 40%;
-    font-size: medium;
-    width: auto;  /* Ancho del cuadrado */
-    height: auto; /* Altura del cuadrado, igual al ancho para que sea un cuadrado */
-    background-color: rgba(0, 0, 0, 0.383); /* Color de fondo del cuadrado */
-    border: 2px  #000; /* Borde del cuadrado */
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-top: 25%;
-    border-radius: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.block1{
-    position: absolute;
-    top: 60%;
-    font-size: medium;
-    width: auto;  /* Ancho del cuadrado */
-    height: auto; /* Altura del cuadrado, igual al ancho para que sea un cuadrado */
-    background-color: rgba(0, 0, 0, 0.383); /* Color de fondo del cuadrado */
-    border: 2px  #000; /* Borde del cuadrado */
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-top: 30%;
-    border-radius: 40px;
-}
-#diriccionaminto{
-    border-color: transparent;
-    background-color: transparent;
-    font-size: larger;
-    color: #C6FADB;
-    text-decoration: none;
-    
-}
-.introduccion{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 500;
-    color: #C6FADB;
-}
-.texto{
-    text-align: center;
-    margin: 10px;
-    font-size: 24px;
-    color: #C6FADB ;
-    font-weight: 400;
-    
-}
-
 body{
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-family: "Roboto Flex", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -89,37 +21,105 @@ body{
         ;
 }
 .content{
-    position: relative;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin: 0px;
     background: linear-gradient( #000,
-    #253237, #9DB4C0 );
+    #0C1821, #1B2A41, #324A5F, #CCC9DC );
     height: 2000px;
 }
-.menu{
+.inicio{
+    background-color: transparent;
     display: flex;
     position: absolute;
-    top: 1%;
-    left: 1%;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    border-color: 5px #C6FADB;
-    background: transparent;
-    border-radius: 10px;
-    color: #C6FADB;
-    background-color:linear-gradient( #000, #253237 );
+    text-align: center;
+    width: 60px;
+    margin: 10px;
+    padding: 2px;
+}
+.error{
+    text-decoration: none;
+}
+#menu{
+    color: #CCC9DC;
+    position: absolute;
+    text-align: center;
 }
 .img{
-    width: 30px;
-
+    width: 40px;
 }
+#diriccionaminto{
+    text-decoration: none;
+    text-align: center;
+    font-size: initial;
+    color: #CCC9DC;
+}
+.cuadrado{
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+}
+#titulo{
+    width: 300px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.146); /* Fondo semi-transparente para mejorar la legibilidad */ 
+    padding: 10px; /* Espaciado interno */ 
+    border-radius: 35px;
+    height: max-content;
+    font-size: xx-large;
+}
+.block{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 600px;
+}
+.texto{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.113); /* Fondo semi-transparente para mejorar la legibilidad */ 
+    padding: 10px; /* Espaciado interno */ 
+    border-radius: 35px;
+    font-size: large;
+}
+.introduccion{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.122); /* Fondo semi-transparente para mejorar la legibilidad */ 
+    padding: 10px; /* Espaciado interno */ 
+    border-radius: 35px;
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media query para pantallas menores de 600px (por ejemplo, teléfonos móviles) */ 
 @media (max-width: 600px) { 
-    body { font-size: 14px; /* Ajustar el tamaño de la fuente */ 
+    body { font-size: 1rem; /* Ajustar el tamaño de la fuente */ 
         margin: 0px;
     } 
     .content {
