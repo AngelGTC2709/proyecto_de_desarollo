@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     display: flex;
+    color: #ededed;
     flex-direction: column;
     justify-content: space-between;
     font-family: "Roboto Flex", sans-serif;
@@ -21,100 +22,219 @@ body{
         ;
 }
 .content{
-    background: linear-gradient( #000,
-    #0C1821, #1B2A41, #324A5F, #CCC9DC );
+    background:#040b0b;
     height: 2000px;
 }
 .inicio{
-    background-color: transparent;
+    background-color:#188f8f;
+    border-radius: 15px;
     display: flex;
-    position: absolute;
-    text-align: center;
+    position: fixed;
     width: 60px;
     margin: 10px;
     padding: 2px;
+    height: 60px;
+    justify-content: center;
+    box-shadow: 0px 0px 10px #188f8f,
+    0px 0px 20px #188f8f, 
+    0px 0px 40px #ededed,
+    0px 0px 60px #ededed;
+    
 }
-.error{
+#error{
     text-decoration: none;
+    color: transparent;
+    list-style: none;
 }
-#menu{
-    color: #CCC9DC;
+.menu{
     position: absolute;
     text-align: center;
+    padding: 16px;
+    border-radius: 24px;
 }
 .img{
     width: 40px;
+    position: relative;
 }
 #diriccionaminto{
     text-decoration: none;
     text-align: center;
     font-size: initial;
-    color: #CCC9DC;
+    color: #ededed;
+    padding: 0px;
+    border: 0px;
+
 }
 .cuadrado{
     display: flex;
     justify-content: center;
-    height: 600px;
+    height: 700px;
     align-items: center;
 }
 #titulo{
-    width: 300px;
+    width:clamp( 250px, 50%, 700px);
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.146); /* Fondo semi-transparente para mejorar la legibilidad */ 
+    background-color: #92e2e2; /* Fondo semi-transparente para mejorar la legibilidad */ 
     padding: 10px; /* Espaciado interno */ 
-    border-radius: 35px;
-    height: max-content;
-    font-size: xx-large;
+    border-radius: 30px;
+    height: 300px;
+    font-size: 600%;
+    justify-items: center;
+    align-self: center;
+    align-content: center;
+    box-shadow: 0px 0px 10px #92e2e2,
+                0px 0px 20px #ededed, 
+                0px 0px 40px #ededed,
+                0px 0px 60px #ededed;
 }
 .block{
+    gap: 30px;
     display: flex;
     align-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    height: 600px;
+    align-items: center;
+    height: 700px;
 }
-.texto{
+.texto1{
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.113); /* Fondo semi-transparente para mejorar la legibilidad */ 
+    background-color: #188f8f; /* Fondo semi-transparente para mejorar la legibilidad */ 
     padding: 10px; /* Espaciado interno */ 
     border-radius: 35px;
-    font-size: large;
-}
+    font-size: x-large;
+    width: clamp( 100px, 50%, 300px);
+    box-shadow: 0px 0px 15px #188f8f,
+                0px 0px 30px #188f8f, 
+                0px 0px 60px #188f8f;
+}   
 .introduccion{
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.122); /* Fondo semi-transparente para mejorar la legibilidad */ 
+    width:clamp( 100px, 50%, 200px);
+    background-color: #188f8f; /* Fondo semi-transparente para mejorar la legibilidad */ 
+    padding: 10px; /* Espaciado interno */ 
+    border-radius: 15px;
+    font-size: x-large;
+    box-shadow: 0px 0px 15px #188f8f,
+                0px 0px 30px #188f8f, 
+                0px 0px 60px #188f8f,
+                0px 0px 80px #188f8f;
+}
+.separador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+#subtitulo{
+    text-align: center;
+    background-color: #188f8f; /* Fondo semi-transparente para mejorar la legibilidad */ 
     padding: 10px; /* Espaciado interno */ 
     border-radius: 35px;
+    font-size: x-large;
+    width:clamp( 100px, 50%, 200px);
+    height: 50px;
+    align-content: center;
+    box-shadow: 0px 0px 15px #188f8f,
+    0px 0px 30px #188f8f, 
+    0px 0px 60px #188f8f,
+    0px 0px 80px #188f8f;
+}
+.block1{
+    display:grid;
+    height: 400px;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows:repeat(30, 10px);
+    justify-content: center;
+    justify-items: center;
+    gap: 1px;
+}
+button{
+     background-color: transparent;
+}
+.introduccion1{
+    text-align: center;
+    background-color: #2beced; /* Fondo semi-transparente para mejorar la legibilidad */ 
+    padding: 0px; /* Espaciado interno */ 
+    margin: 0px;
+    border-radius: 35px;
     font-size: large;
+    grid-column: 3 / 10;
+    grid-row: 3 / 7;
+    width: 140px;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0px 0px 15px #2beced,
+    0px 0px 30px #2beced, 
+    0px 0px 60px #2beced,
+    0px 0px 80px #2beced;
+}
+.introduccion2{
+    text-align: center;
+    background-color:#2beced; /* Fondo semi-transparente para mejorar la legibilidad */ 
+    padding: 0px; /* Espaciado interno */ 
+    margin: 0px;
+    border-radius: 35px;
+    font-size: large;
+    grid-column: 13 / 18;
+    grid-row: 3 / 7;
+    width: 140px;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0px 0px 15px #2beced,
+    0px 0px 30px #2beced, 
+    0px 0px 60px #2beced,
+    0px 0px 80px #2beced;
 }
 
+.introduccion3{
+    text-align: center;
+    background-color: #2beced; /* Fondo semi-transparente para mejorar la legibilidad */ 
+    padding: 10px; /* Espaciado interno */ 
+    margin: 0px;
+    border-radius: 35px;
+    font-size: large;
+    grid-column: 3 / 10;
+    grid-row: 11 / 15;
+    width: 140px;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0px 0px 15px #188f8f,
+    0px 0px 30px #2beced, 
+    0px 0px 60px #2beced,
+    0px 0px 80px #2beced;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.introduccion4{
+    text-align: center;
+    background-color: #2beced; /* Fondo semi-transparente para mejorar la legibilidad */ 
+    padding: 0px; /* Espaciado interno */ 
+    margin: 0px;
+    border-radius: 35px;
+    font-size: large;
+    grid-column: 13 / 18;
+    grid-row: 11 / 15;
+    width: 140px;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0px 0px 15px #188f8f,
+    0px 0px 30px #2beced, 
+    0px 0px 60px #2beced,
+    0px 0px 80px #2beced;
+}
+#diriccionaminto1{
+    text-decoration: none;
+    text-align: center;
+    font-size: initial;
+    color: #040b0b;
+    padding: 0px;
+    border: 0px;
+    text-shadow: 0px 0px 15px #040b0b,
+    0px 0px 30px #040b0b, 
+    0px 0px 60px #040b0b,
+    0px 0px 80px #040b0b;
+    
+}
 
 
 /* Media query para pantallas menores de 600px (por ejemplo, teléfonos móviles) */ 
@@ -125,16 +245,7 @@ body{
     .content {
          width: 100% ; /* Hacer que el contenedor ocupe el 100% del ancho */ 
          padding: 0px ; /* Reducir el padding */
-         font-size: 5px;
-    } 
-    .navbar a { 
-        display: none; /* Oculta los enlaces por defecto */ 
-    } 
-    .menu-btn { 
-            display: block; /* Muestra el botón en pantallas pequeñas */ 
-        } 
-    .menu-toggle:checked + .navbar a { 
-        display: block; /* Muestra los enlaces cuando el checkbox está marcado */ 
+         font-size: x-small;
     } 
 }
 /* Estilos para tabletas (ancho máximo de 768px) */
@@ -149,15 +260,6 @@ body{
         padding: 0px; /* Ajustar el padding */
         font-size: small;
     }
-    .navbar a { 
-        display: none; /* Oculta los enlaces por defecto */ 
-    } 
-    .menu-btn { 
-            display: block; /* Muestra el botón en pantallas pequeñas */ 
-        } 
-    .menu-toggle:checked + .navbar a { 
-        display: block; /* Muestra los enlaces cuando el checkbox está marcado */ 
-    } 
 }
 
 /* Estilos para pantallas más grandes (ancho mínimo de 769px) */
@@ -171,13 +273,4 @@ body{
         width: 80%; /* Ajustar el ancho del contenedor */
         padding: 0px; /* Ajustar el padding */
     }
-    .navbar a { 
-        display: flex; /* Oculta los enlaces por defecto */ 
-    } 
-    .menu-btn { 
-            display: flex; /* Muestra el botón en pantallas pequeñas */ 
-        } 
-    .menu-toggle:checked + .navbar a { 
-        display: flex; /* Muestra los enlaces cuando el checkbox está marcado */ 
-    } 
 }
