@@ -37,6 +37,20 @@ body{
     justify-content: center;
     align-items: center;
   }
+  .one1 {
+    position: relative;
+    height: 300px;
+    width: clamp(100px, 70%, 900px);
+    background-color: #2beced;
+    animation: rot 2s infinite ease;
+    border-radius: 20px;
+    box-shadow: 0 0 50px 20px, inset 0 0 90px 30px;
+    color: #2beced;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .one #titulo {
     opacity: 0;
@@ -76,7 +90,6 @@ body{
   
 .content{
     background:#040b0b;
-    height: 2500px;
 }
 .inicio{
     background-color:#188f8f;
@@ -140,18 +153,18 @@ body{
     padding: 10px; /* Espaciado interno */ 
     border-radius: 35px;
     font-size: x-large;
-    width: clamp( 100px, 50%, 300px);
+    width: clamp( 360px, 50%, 1000px);
     box-shadow: 0px 0px 15px #188f8f,
                 0px 0px 30px #188f8f, 
                 0px 0px 60px #188f8f;
 }   
 .introduccion{
     text-align: center;
-    width:clamp( 100px, 50%, 200px);
+    width:clamp( 325px, 50%, 700px);
     background-color: #188f8f; /* Fondo semi-transparente para mejorar la legibilidad */ 
     padding: 10px; /* Espaciado interno */ 
     border-radius: 15px;
-    font-size: x-large;
+    font-size: 60px;
     box-shadow: 0px 0px 15px #188f8f,
                 0px 0px 30px #188f8f, 
                 0px 0px 60px #188f8f,
@@ -165,10 +178,10 @@ body{
 }
 .union{
     display: flex;
-    flex-wrap: wrap;
+    height: 1200px;
+    gap: 4rem;
     justify-content: center;
     flex-direction: column;
-    gap: 1rem;
 }
 #subtitulo{
     text-align: center;
@@ -186,12 +199,23 @@ body{
 }
 .block1{
     display:grid;
-    height: 900px;
+    height: clamp(200px, 100%, 300px);
     margin-left: 40px;
     margin-right: 40px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
-    gap: 8rem;
+    gap: 4rem;
+    align-content: center;
+}
+.block12{
+    display:grid;
+    height:clamp(200px, 20%, 300px);
+    margin-left: 40px;
+    margin-right: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 4rem;
+    align-content: center;
 }
 button{
      background-color: transparent;
@@ -224,36 +248,124 @@ button{
 }
 .block2{
     display: flex;
-    height: 1600px;
     justify-content: center;
     align-content: flex-start;
     gap: 3rem;
     flex-wrap: wrap;
 }
 .leyenda1{
-    background-color: #2beced;
-    border-radius: 25px;
+    padding: 10px;
     height: max-content;
     width:clamp( 300px, 50%, 600px);
+    border-radius: 41px;
+    background: linear-gradient(225deg, #040a0a, #040c0c);
+    box-shadow:  -13px 13px 26px #020404,
+                 13px -13px 26px #061212;
 }
 .cuadrado1{
-    background-color: #188f8f;
     width: auto;
     text-align: center;
     border-radius: 25px;
     margin-top: 50px;
     padding: 20px;
+    border-radius: 41px;
+    background: #040b0b;
+    box-shadow: inset -5px 5px 10px #020404,
+            inset 5px -5px 10px #061212;
+
 }
 .informacion{
     font-size: 65px;
     text-align: center;
+    text-shadow:    0px 0px 15px #2beced,
+                    0px 0px 30px #2beced, 
+                    0px 0px 60px #2beced,
+                    0px 0px 80px #2beced;
+    color: #2beced;
 }
 .texto2{
     font-size: xx-large;
 }
 #fotografia{
     width:460px;
+} 
+.pie{
+    position:relative;
+    margin: 40px;
 }
+.button {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    position: relative;
+    font-size: 17px;
+    background: #061212;
+    border: none;
+    color: #fff;
+  }
+  
+  .button:hover {
+    letter-spacing: 0.25em;
+    background: #2beced;
+    color: #2beced;
+    box-shadow: 0 0 45px #ff1867;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #040b0b;
+  }
+  
+  .button span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button i {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  
+  .button i::before {
+    content: '';
+    position: absolute;
+    border: 2px solid #ff1867;
+    width: 7px;
+    height: 4px;
+    top: -3.5px;
+    left: 80%;
+    background: #222222;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
+  
+  .button:hover i::before {
+    width: 20px;
+    left: 20%;
+  }
+  
+  .button i::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #ff1867;
+    width: 7px;
+    height: 4px;
+    bottom: -3.5px;
+    left: 20%;
+    background: #222222;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
+  
+  .button:hover i::after {
+    width: 20px;
+    left: 80%;
+  }
+  
 /* Media query para pantallas menores de 600px (por ejemplo, teléfonos móviles) */ 
 @media (max-width: 600px) { 
     body { font-size: 1rem; /* Ajustar el tamaño de la fuente */ 
