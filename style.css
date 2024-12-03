@@ -63,11 +63,11 @@ body{
     text-align: center;
     font-size: 400%;
     padding:10px ;
-    color: #040b0b;
-    text-shadow: 0px 0px 15px #040b0b,
-    0px 0px 30px #040b0b, 
-    0px 0px 60px #040b0b,
-    0px 0px 80px #040b0b;
+    color: #031a1b;
+    text-shadow: 0px 0px 15px #031a1b,
+    0px 0px 30px #031a1b, 
+    0px 0px 60px #031a1b,
+    0px 0px 80px #031a1b;
   }
   
   .one:hover {
@@ -89,22 +89,15 @@ body{
   }
   
 .content{
-    background:#040b0b;
+    background:#031a1b;
 }
 .inicio{
-    background-color:#188f8f;
-    border-radius: 15px;
+
     display: flex;
     position: fixed;
     width: 60px;
     margin: 10px;
-    padding: 2px;
-    height: 60px;
-    justify-content: center;
-    box-shadow: 0px 0px 10px #188f8f,
-    0px 0px 20px #188f8f, 
-    0px 0px 40px #ededed,
-    0px 0px 60px #ededed;
+    padding: 2px
     
 }
 #error{
@@ -113,13 +106,18 @@ body{
     justify-items: center;
 }
 .menu{
-    position: absolute;
+    position: fixed;
+    top: 20px;
+    left: 20px;
     text-align: center;
     padding: 16px;
-    border-radius: 24px;
+    border-radius: 41px;
+    background: #031a1b;
+    box-shadow:  13px -13px 26px #010a0b,
+                 -13px 13px 26px #052a2b;
 }
 .img{
-    width: 40px;
+    width: 60px;
     position: relative;
 }
 #diriccionaminto{
@@ -129,6 +127,7 @@ body{
     color: #ededed;
     padding: 0px;
     border: 0px;
+
 
 }
 .cuadrado{
@@ -238,40 +237,42 @@ button{
     text-decoration: none;
     text-align: center;
     font-size: xx-large;
-    color: #040b0b;
+    color: #031a1b;
     padding: 0px;
     border: 0px;
-    text-shadow: 0px 0px 15px #040b0b,
-    0px 0px 30px #040b0b, 
-    0px 0px 60px #040b0b,
-    0px 0px 80px #040b0b;
+    text-shadow: 0px 0px 15px #031a1b,
+    0px 0px 30px #031a1b, 
+    0px 0px 60px #031a1b,
+    0px 0px 80px #031a1b;
 }
 .block2{
     display: flex;
+    padding: 10px;
     justify-content: center;
     align-content: flex-start;
     gap: 3rem;
     flex-wrap: wrap;
 }
 .leyenda1{
-    padding: 10px;
+    padding: 20px;
     height: max-content;
     width:clamp( 300px, 50%, 600px);
     border-radius: 41px;
-    background: linear-gradient(225deg, #040a0a, #040c0c);
-    box-shadow:  -13px 13px 26px #020404,
-                 13px -13px 26px #061212;
+    background: #031a1b;
+    box-shadow:  13px -13px 26px #010a0b,
+                 -13px 13px 26px #052a2b;
 }
 .cuadrado1{
     width: auto;
     text-align: center;
     border-radius: 25px;
-    margin-top: 50px;
+    margin: 0px;
     padding: 20px;
     border-radius: 41px;
-    background: #040b0b;
-    box-shadow: inset -5px 5px 10px #020404,
-            inset 5px -5px 10px #061212;
+    background: #031a1b;
+    background: #031a1b;
+    box-shadow: inset 9px -9px 18px #010a0b,
+                inset -9px 9px 18px #052a2b;
 
 }
 .informacion{
@@ -316,7 +317,7 @@ button{
     content: '';
     position: absolute;
     inset: 2px;
-    background: #040b0b;
+    background: #031a1b;
   }
   
   .button span {
@@ -365,7 +366,20 @@ button{
     width: 20px;
     left: 80%;
   }
-  
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #031a1b;
+}
+  ::-webkit-scrollbar-thumb{
+    border-radius: 1000px;
+    background: #2beced;
+    box-shadow: 0px 0px 15px #2beced,
+    0px 0px 30px #2beced, 
+    0px 0px 60px #2beced,
+    0px 0px 80px #2beced;
+  }
 /* Media query para pantallas menores de 600px (por ejemplo, teléfonos móviles) */ 
 @media (max-width: 600px) { 
     body { font-size: 1rem; /* Ajustar el tamaño de la fuente */ 
