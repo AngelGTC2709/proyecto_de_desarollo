@@ -100,6 +100,29 @@ body{
     padding: 2px
     
 }
+.separado{
+  display: flex;
+  justify-content: space-around;
+  margin: 60px;
+}
+.textNew{
+  padding: 20px;
+  height: max-content;
+  text-align: center;
+  width:clamp( 300px, 50%, 600px);
+  border-radius: 41px;
+  background: #031a1b;
+  box-shadow:  13px -13px 26px #010a0b,
+               -13px 13px 26px #052a2b;
+}
+.texto2-1{
+  color: #2beced;
+  font-size: 40px;
+  text-shadow:    0px 0px 15px #2beced,
+  0px 0px 30px #2beced, 
+  0px 0px 60px #2beced,
+  0px 0px 80px #2beced;
+}
 #error{
     list-style: none;
     color: #ededed;
@@ -119,6 +142,7 @@ body{
 .img{
     width: 60px;
     position: relative;
+    cursor: pointer;
 }
 #diriccionaminto{
     text-decoration: none;
@@ -259,6 +283,7 @@ button{
     width:clamp( 300px, 50%, 600px);
     border-radius: 41px;
     background: #031a1b;
+    cursor: pointer;
     box-shadow:  13px -13px 26px #010a0b,
                  -13px 13px 26px #052a2b;
 }
@@ -288,7 +313,12 @@ button{
     font-size: xx-large;
 }
 #fotografia{
-    width:460px;
+    width:clamp(260px, 100%, 600px);
+    border-radius: 25px;
+} 
+#fotografia1{
+    width: clamp(260px, 100%, 600px);
+    border-radius: 25px;
 } 
 .pie{
     position:relative;
